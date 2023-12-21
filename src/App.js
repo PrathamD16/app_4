@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Dashboard from "./Components/Dashboard";
+import SmartServe from './Images/logo.jpg'
 // import Dashboard from "./Dashboard";
 
 const App = () => {
@@ -49,11 +50,14 @@ const App = () => {
   return (
     <div>
       <div className={!login ? `` : `hidden`}>
-        <div className="min-h-screen flex justify-center items-center bg-slate-800">
-          <div className="bg-slate-900 shadow-md rounded px-8 py-8 sm:px-12 sm:py-12 w-96">
-            <h2 className="text-2xl font-semibold mb-6 text-center text-white">
+        <div className="min-h-screen flex justify-center items-center bg-slate-900">
+          <div className="bg-black shadow-md rounded px-8 py-8 sm:px-12 sm:py-12 w-96">
+            <h3 className="text-2xl mb-6 text-center"> 
+              <img src={SmartServe} alt="#" />
+            </h3>
+            {/* <h2 className="text-2xl font-semibold mb-6 text-center text-white">
               Login
-            </h2>
+            </h2> */}
             <form onSubmit={handleSubmit}>
               <div className="mb-6">
                 <input
